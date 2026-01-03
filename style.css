@@ -44,6 +44,207 @@ header {
   color: #c19a6b;
 }
 
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Mega Dropdown Container */
+.mega-dropdown {
+  position: relative;
+}
+
+/* Hidden Menu */
+.mega-menu {
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260px;
+  background: #ffffff;
+  padding: 20px 0;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  border-radius: 3px;
+  z-index: 1000;
+  opacity: 0;
+  transition: all .25s ease;
+}
+
+/* pointer arrow */
+.mega-menu::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  transform: translateX(-50%) rotate(45deg);
+  box-shadow: -3px -3px 5px rgba(0,0,0,0.04);
+}
+
+/* on hover show dropdown */
+.mega-dropdown:hover .mega-menu {
+  display: flex;
+  opacity: 1;
+  top: 48px;
+}
+
+/* Dropdown Links Style */
+.mega-menu li {
+  padding: 10px 30px;
+}
+
+.mega-menu li a {
+  display: block;
+  color: #000;
+  transition: 0.2s ease;
+}
+
+.mega-menu li a:hover {
+  color: #b28340; /* Gold hover color like MudraGlobal */
+}
+
+/* Sticky Header */
+#main-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  transition: .35s ease;
+  background: transparent;
+}
+
+#main-header.scrolled {
+  background: rgba(255,255,255,0.98);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+/* Desktop Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 60px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+/* Hide mobile nav toggle on desktop */
+.mobile-menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Desktop nav list */
+.desktop-nav ul {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+}
+
+.desktop-nav a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.desktop-nav a:hover {
+  color: #b28340;
+}
+
+/* Mega Dropdown Desktop (Already provided before) */
+
+
+/* MOBILE NAV PANEL */
+.mobile-nav {
+  position: fixed;
+  right: -260px;
+  top: 0;
+  width: 260px;
+  height: 100%;
+  background: #000;
+  color: #fff;
+  padding-top: 80px;
+  transition: .4s ease;
+  z-index: 10000;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-nav a {
+  display: block;
+  padding: 15px 25px;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid #222;
+}
+
+.mobile-nav a:hover {
+  background: #b28340;
+}
+
+/* Mobile submenu toggle */
+.mobile-dropdown {
+  position: relative;
+}
+
+.mobile-sub-toggle {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.mobile-submenu {
+  display: none;
+  background: #111;
+}
+
+.mobile-dropdown.open .mobile-submenu {
+  display: block;
+}
+
+.mobile-nav.active {
+  right: 0;
+}
+
+/* Responsive */
+@media(max-width: 992px) {
+  .desktop-nav { display: none; }
+  .mobile-menu-toggle { display: block; }
+}
+
+
 /* Hero */
 .hero {
   height: 100vh;

@@ -23,20 +23,111 @@
 
   <body>
     <!-- HEADER -->
-    <header>
+
+    <header id="main-header">
       <div class="navbar">
         <div class="logo">Oriseglobal</div>
-        <nav>
+
+        <!-- Hamburger Icon -->
+        <div class="mobile-menu-toggle" id="mobileToggle">&#9776;</div>
+
+        <nav class="desktop-nav">
           <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">PRODUCT</a></li>
-            <li><a href="#">CONTACT US</a></li>
-            <li><a href="#">MEDIA GALLERY</a></li>
-            <li><a href="#">BLOG</a></li>
+            <li><a href="/index.html">HOME</a></li>
+
+            <!-- SERVICES DROPDOWN -->
+            <li class="mega-dropdown">
+              <a href="/services.html" class="services-link">SERVICES</a>
+              <ul class="mega-menu">
+                <li>
+                  <a href="/international-business-consulting.html"
+                    >International Business Consultants</a
+                  >
+                </li>
+                <li>
+                  <a href="merchant-exporter-services.html"
+                    >Merchant Exporter Services</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- PRODUCTS DROPDOWN -->
+            <li class="mega-dropdown">
+              <a class="products-link">PRODUCTS</a>
+              <ul class="mega-menu">
+                <li>
+                  <a href="/product/global-trading-products.html"
+                    >GENERAL TRADING PRODUCTS</a
+                  >
+                </li>
+                <li><a href="./product/agro-commodities.html">AGRO COMMODITIES</a></li>
+                <li><a href="./product/fmcg-exporters.html">FMCG EXPORTERS</a></li>
+                <li>
+                  <a href="./product/machinery-and-vehicle.html"
+                    >MACHINERY AND VEHICLE</a
+                  >
+                </li>
+                <li><a href="./product/metal-and-alloys.html">METAL & ALLOYS</a></li>
+                <li><a href="./product/wood-trading.html">WOOD TRADING</a></li>
+              </ul>
+            </li>
+
+            <li><a href="/contact-us.html">CONTACT US</a></li>
+            <li><a href="/media-gallery.html">MEDIA GALLERY</a></li>
+            <li><a href="/blog.html">BLOG</a></li>
           </ul>
         </nav>
       </div>
+
+      <!-- MOBILE SLIDE MENU -->
+      <nav class="mobile-nav" id="mobileNav">
+        <ul>
+          <li><a href="/index.html">HOME</a></li>
+
+          <!-- SERVICES -->
+          <li class="mobile-dropdown">
+            <a class="mobile-services-menu">SERVICES</a>
+            <button class="mobile-sub-toggle">+</button>
+            <ul class="mobile-submenu">
+              <li>
+                <a href="/international-business-consulting.html"
+                  >International Business Consultants</a
+                >
+              </li>
+              <li>
+                <a href="/merchant-exporter-services.html"
+                  >Merchant Exporter Services</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <!-- PRODUCTS -->
+          <li class="mobile-dropdown">
+            <a class="mobile-products-menu">PRODUCTS</a>
+            <button class="mobile-sub-toggle">+</button>
+            <ul class="mobile-submenu">
+              <li>
+                <a href="/general-trading-products.html"
+                  >GENERAL TRADING PRODUCTS</a
+                >
+              </li>
+              <li><a href="/agro-commodities.html">AGRO COMMODITIES</a></li>
+              <li><a href="/fmcg-exporters.html">FMCG EXPORTERS</a></li>
+              <li>
+                <a href="/machinery-and-vehicle.html">MACHINERY AND VEHICLE</a>
+              </li>
+              <li><a href="/metal-and-alloys.html">METAL & ALLOYS</a></li>
+              <li><a href="/wood-trading.html">WOOD TRADING</a></li>
+            </ul>
+          </li>
+
+          <li><a href="/contact-us.html">CONTACT US</a></li>
+          <li><a href="/media-gallery.html">MEDIA GALLERY</a></li>
+          <li><a href="/blog.html">BLOG</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- HERO SECTION -->
@@ -394,7 +485,7 @@
           <img src="./assets/mudra-600x422.jpg" alt="About Mudra Global" />
         </div>
       </div>
-    </section> --> 
+    </section> -->
 
     <!-- WHY CHOOSE US -->
     <section class="why-us" id="why-us">
@@ -542,25 +633,52 @@
     </footer>
 
     <footer class="mg-footer-bottom">
-  <div class="mg-bottom-container">
+      <div class="mg-bottom-container">
+        <div class="mg-copy">
+          COPYRIGHT © 2024 | ALL RIGHTS RESERVED | MUDRA GLOBAL
+        </div>
 
-    <div class="mg-copy">
-      COPYRIGHT © 2024 | ALL RIGHTS RESERVED | MUDRA GLOBAL
-    </div>
+        <div class="mg-social">
+          <a
+            href="https://www.facebook.com/mudraglobal/"
+            target="_blank"
+            title="Facebook"
+            class="mg-icon fb"
+          ></a>
+          <a
+            href="https://www.instagram.com/mudra_global/"
+            target="_blank"
+            title="Instagram"
+            class="mg-icon insta"
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UCuoeios8eh-NMEPkjWFQuYw"
+            target="_blank"
+            title="YouTube"
+            class="mg-icon yt"
+          ></a>
+          <a
+            href="https://www.linkedin.com/company/mudra-global/"
+            target="_blank"
+            title="LinkedIn"
+            class="mg-icon ln"
+          ></a>
+          <a
+            href="https://twitter.com/MudraGlobal"
+            target="_blank"
+            title="Twitter"
+            class="mg-icon tw"
+          ></a>
+        </div>
+      </div>
 
-    <div class="mg-social">
-      <a href="https://www.facebook.com/mudraglobal/" target="_blank" title="Facebook" class="mg-icon fb"></a>
-      <a href="https://www.instagram.com/mudra_global/" target="_blank" title="Instagram" class="mg-icon insta"></a>
-      <a href="https://www.youtube.com/channel/UCuoeios8eh-NMEPkjWFQuYw" target="_blank" title="YouTube" class="mg-icon yt"></a>
-      <a href="https://www.linkedin.com/company/mudra-global/" target="_blank" title="LinkedIn" class="mg-icon ln"></a>
-      <a href="https://twitter.com/MudraGlobal" target="_blank" title="Twitter" class="mg-icon tw"></a>
-    </div>
-
-  </div>
-
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/971555342424" target="_blank" class="mg-whatsapp"></a>
-</footer>
+      <!-- WhatsApp Floating Button -->
+      <a
+        href="https://wa.me/971555342424"
+        target="_blank"
+        class="mg-whatsapp"
+      ></a>
+    </footer>
 
     <!-- FOOTER END -->
 
